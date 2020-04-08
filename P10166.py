@@ -1,7 +1,6 @@
 # 수학 내다버린 풀이
 
 D_1, D_2 = map(int, input().split())
-seatcount = 0
 list_temp = []
 
 for i in range(D_1, D_2 + 1):
