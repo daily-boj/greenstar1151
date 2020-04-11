@@ -1,7 +1,7 @@
 import sys
-text_in = sys.stdin.readlines()
+text = sys.stdin.read()
 
+while 'BUG' in text:
+    text = text.replace('BUG', '')
 
-
-for s in text_in:
-    print(s.replace('BUG', ''), end='')
+print(text)
