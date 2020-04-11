@@ -7,3 +7,4 @@ N = int(input())
 
 for _ in range(N):
     print(P_n[int(input()) - 1])
+
