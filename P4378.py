@@ -2,14 +2,17 @@ keyboard = ['`','1','2','3','4','5','6','7','8','9','0','-','=','','Q','W','E','
 s_out = ''
 
 s_in = input()
-while s_in != '':
-    for s in s_in:   
-        if s == ' ':
-            s_out += ' '
+try:
+    while s_in != '':
+        for s in s_in:   
+            if s == ' ':
+                s_out += ' '
+            else:
+                i = keyboard.index(s)
+                s_out += keyboard[i - 1]
         else:
-            i = keyboard.index(s)
-            s_out += keyboard[i - 1]
-    else:
-        print(s_out)
-        s_out = ''
-    s_in = input()
+            print(s_out)
+            s_out = ''
+        s_in = input()
+except EOFError:
+    pass
